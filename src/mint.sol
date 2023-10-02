@@ -19,8 +19,7 @@ contract MyToken is
     constructor() ERC721("MyToken", "MTK") EIP712("MyToken", "1") {}
 
     function _baseURI() internal pure override returns (string memory) {
-        return
-            "https://ipfs.io/ipfs/QmRrwWV6BF65XMoZEGAaL3HzvYGK3yzDgmzSGxeCHenRam/";
+        return "ipfs://QmRrwWV6BF65XMoZEGAaL3HzvYGK3yzDgmzSGxeCHenRam/";
     }
 
     function safeMint(
